@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "addOrReplaceParams": [
+              {
+                "key": "w",
+                "value": "1",
+                "replaceOnly": false
+              }
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "regexFilter": ".*github\\.com\\/.*\\/.*\\/pull\\/\\d+\/files.*",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "other",
+        "media",
+        "webtransport",
+        "xmlhttprequest",
+        "object"
+      ]
+    }
+  }
+]

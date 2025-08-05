@@ -1,0 +1,21 @@
+{
+  "name": "github whitespaces",
+  "description": "github whitespaces",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "*://github.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules_1.json"
+      }
+    ]
+  }
+}

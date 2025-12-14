@@ -19,7 +19,7 @@
       }
     },
     "condition": {
-      "regexFilter": ".*github\\.com\\/.*\\/.*\\/pull\\/\\d+\/files.*",
+      "regexFilter": ".*github\\.com\\/.*\\/.*\\/pull\\/\\d+\/(files|changes).*",
       "resourceTypes": [
         "main_frame",
         "sub_frame",
